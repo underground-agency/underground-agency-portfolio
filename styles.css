@@ -1262,3 +1262,45 @@ body::before {
       #020304;
   }
 }
+
+/* Make every results panel easy to scan against the shared dark canvas. */
+.number-card,
+.case-stats,
+.solstice-results,
+.executive-results,
+.albert-results {
+  background-color: rgba(5, 6, 9, .94);
+}
+.number-card strong,
+.case-stats strong,
+.result-hero strong,
+.result-list strong,
+.solstice-total > strong,
+.solstice-stats strong,
+.albert-grid strong {
+  color: #f7f8fb;
+  font-weight: 600;
+}
+.number-card strong span,
+.result-hero strong span,
+.solstice-total > strong span {
+  color: #b6c9ff;
+  text-shadow: 0 0 16px rgba(182, 201, 255, .2);
+}
+.metric-label {
+  color: #d4dcf2;
+  font-size: 11px;
+}
+.metric-caption,
+.case-stats span,
+.result-list span,
+.solstice-stats span,
+.albert-grid span {
+  color: #d0d4de;
+  font-size: 11px;
+  line-height: 1.6;
+}
+.albert-heading > span,
+.albert-heading strong span {
+  color: #c2c9d9;
+}

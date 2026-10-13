@@ -1151,6 +1151,29 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
 .nav-index, .desktop-nav a:hover .nav-index, .desktop-nav a[aria-current="location"] .nav-index { color: #83dcff; }
 .signal { background: #83dcff; box-shadow: 0 0 12px rgba(131,220,255,.5); }
 
+/* Compact cover: keep the opening focused on the title and one clear action. */
+.hero {
+  min-height: clamp(560px, 72svh, 740px);
+  padding-top: 0;
+  padding-bottom: 32px;
+}
+.hero-topline { top: 54px; }
+.hero-stage { margin-top: 18px; }
+.hero-stage-rule { display: none; }
+.hero-bottom { padding-top: 18px; }
+.hero-bottom p { max-width: 480px; font-size: clamp(14px, 1.1vw, 16px); }
+@media (max-width: 760px) {
+  .hero { min-height: 0; padding-top: 72px; padding-bottom: 26px; }
+  .hero-topline { top: 20px; }
+  .hero-stage { margin-top: 0; padding-top: 52px; padding-bottom: 34px; }
+  .hero-bottom { padding-top: 16px; }
+}
+@media (max-width: 560px) {
+  .hero-topline { font-size: 8px; }
+  .hero-topline > span:last-child { text-align: right; }
+  .hero-stage { padding-top: 40px; padding-bottom: 26px; }
+}
+
 .contact {
   position: relative;
   overflow: hidden;

@@ -21,8 +21,27 @@
   }
 
   const progress = document.querySelector(".scroll-progress span");
-  const sections = [...document.querySelectorAll("main section[id]")];
+  const sections = [...document.querySelectorAll("main section[id], .post-gallery[id]")];
   const navLinks = [...document.querySelectorAll(".desktop-nav a")];
+  const navToggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".desktop-nav");
+
+  const closeNavigation = () => {
+    nav?.classList.remove("is-open");
+    navToggle?.setAttribute("aria-expanded", "false");
+    navToggle?.setAttribute("aria-label", "Open navigation");
+  };
+
+  navToggle?.addEventListener("click", () => {
+    const open = navToggle.getAttribute("aria-expanded") !== "true";
+    navToggle.setAttribute("aria-expanded", String(open));
+    navToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+    nav?.classList.toggle("is-open", open);
+  });
+  navLinks.forEach((link) => link.addEventListener("click", closeNavigation));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeNavigation();
+  });
 
   const updateProgress = () => {
     const root = document.documentElement;

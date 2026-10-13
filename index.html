@@ -8,7 +8,7 @@
     <title>Underground Agency — We build the trenches</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Michroma&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Michroma&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -16,36 +16,36 @@
     <div class="scroll-progress" aria-hidden="true"><span></span></div>
     <header class="topbar">
       <a class="wordmark" href="#top" aria-label="Underground Agency home">UNDERGROUND</a>
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="#work">Work</a><a href="#services">Capabilities</a><a href="#contact">Contact</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="desktop-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="#intro"><span class="nav-index">01</span><span class="nav-label">About</span></a><a href="#work"><span class="nav-index">02</span><span class="nav-label">Work</span></a><a href="#ambassador"><span class="nav-index">03</span><span class="nav-label">Ambassador</span></a><a href="#personal"><span class="nav-index">04</span><span class="nav-label">Personal</span></a><a href="#posts"><span class="nav-index">05</span><span class="nav-label">Executive posts</span></a><a href="#videos"><span class="nav-index">06</span><span class="nav-label">Video</span></a><a href="#services"><span class="nav-index">07</span><span class="nav-label">Capabilities</span></a><a href="#contact"><span class="nav-index">08</span><span class="nav-label">Contact</span></a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero scene" aria-labelledby="hero-title">
-        <div class="hero-ambient" aria-hidden="true">
-          <div class="ambient-grid"></div><div class="ambient-orb orb-one"></div><div class="ambient-orb orb-two"></div>
-          <div class="tunnel tunnel-one"></div><div class="tunnel tunnel-two"></div><div class="tunnel tunnel-three"></div>
-          <div class="silhouette silhouette-left"></div><div class="silhouette silhouette-right"></div>
+        <div class="hero-lab" aria-hidden="true"></div>
+        <div class="hero-shutter" aria-hidden="true"></div>
+        <div class="hero-topline mono"><span><i class="signal"></i> INDEPENDENT GROWTH STUDIO</span><span>BUILT BELOW THE SURFACE / 2026</span></div>
+        <div class="hero-stage">
+          <p class="hero-overline mono">UNDERGROUND AGENCY <span>—</span> SELECTED WORK</p>
+          <h1 id="hero-title"><span class="hero-title-line hero-title-first">WE BUILD</span><span class="hero-title-line hero-title-second">THE TRENCHES<span class="hero-title-dot">.</span></span></h1>
+          <div class="hero-stage-rule" aria-hidden="true"><span></span></div>
         </div>
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="signal"></span> INDEPENDENT GROWTH STUDIO <span class="eyebrow-index">[01—14]</span></p>
-          <h1 id="hero-title"><span class="title-line">Underground</span><span class="title-line title-line-accent">Agency</span></h1>
-          <p class="hero-tagline">We build the trenches.</p>
-          <p class="hero-description">The people, systems and stories that make good projects impossible to ignore.</p>
-          <a class="hero-link mono" href="#work">Explore selected work <span>↓</span></a>
+        <div class="hero-bottom">
+          <p>We turn sharp thinking into visible momentum. Through founders, communities and campaigns built to last.</p>
+          <a class="hero-link mono" href="#work">Explore selected work <span>↘</span></a>
+          <span class="hero-bottom-index mono">01 / DESCEND</span>
         </div>
-        <div class="hero-footer mono"><span>STRATEGY / EXECUTION / GROWTH</span><span>BUILT BELOW THE SURFACE</span><span>SCROLL TO DESCEND ↓</span></div>
-        <div class="hero-side mono" aria-hidden="true">INDEPENDENT<br />BY DESIGN</div>
       </section>
 
-      <section class="intro section-shell" aria-labelledby="intro-title">
+      <section class="intro section-shell" id="intro" aria-labelledby="intro-title">
         <div class="section-kicker mono"><span>01</span><span>THE WORK BELOW THE SURFACE</span></div>
         <div class="intro-layout">
           <h2 id="intro-title">Attention is rented.<br /><em>Trust is built.</em></h2>
           <div class="intro-copy">
-            <p>Underground helps ambitious teams earn the kind of attention that compounds. We turn founder expertise into a clear public voice, and committed users into a channel that shows up when it matters.</p>
-            <p>Strategy sets the direction. A real operating system keeps the signal moving.</p>
+            <p>Underground helps ambitious teams earn attention that compounds. We turn <strong>founder expertise</strong> into a clear public voice, and <strong>committed users</strong> into a channel that shows up when it matters.</p>
+            <p><strong>Strategy sets the direction.</strong> A real <strong>operating system</strong> keeps the signal moving.</p>
           </div>
         </div>
         <div class="service-ribbon mono" aria-label="Focus areas"><span>PERSONAL BRANDING</span><i>✳</i><span>AMBASSADOR PROGRAMS</span><i>✳</i><span>SMART GROWTH</span><i>✳</i><span>COMMUNITY LAUNCHES</span></div>
@@ -53,23 +53,23 @@
 
       <section class="work section-shell" id="work" aria-labelledby="work-title">
         <div class="section-kicker mono"><span>02</span><span>SELECTED FIELD NOTES</span></div>
-        <div class="section-heading"><h2 id="work-title">Built in the trenches.<br /><em>Measured in the open.</em></h2><p>Different problems. One rule: make the work useful enough to travel.</p></div>
+        <div class="section-heading"><h2 id="work-title">Built in the trenches.<br /><em>Measured in the open.</em></h2><p>Real work. Clear outcomes.</p></div>
 
         <article class="case case-quantus">
           <div class="case-top mono"><span>CASE 01 / COMMUNITY LAUNCH</span><span>INFRASTRUCTURE · POW L1</span></div>
-          <div class="case-title-row"><div><p class="case-client">QUANTUS <span>↗</span></p><h3>The Quantus Era</h3></div><p class="case-summary">A five-sprint launch built around product use, not just social farming.</p></div>
+          <div class="case-title-row"><div><p class="case-client">QUANTUS <span>↗</span></p><h3>The Quantus Era</h3></div><p class="case-summary">Five weekly sprints that turned community activity into <strong>verified product actions</strong>.</p></div>
           <div class="case-visual quantus-visual" aria-hidden="true"><div class="quantus-ring ring-a"></div><div class="quantus-ring ring-b"></div><div class="quantus-core">Q</div><span class="visual-coordinate mono">ML-DSA / POST-QUANTUM<br />JAN — MAR 2026</span><span class="visual-caption mono">A COMMUNITY IN MOTION</span></div>
           <div class="case-stats">
             <div><strong>6,678</strong><span>community members</span></div><div><strong>31,697</strong><span>verified completions</span></div><div><strong>85.9%</strong><span>verified success rate</span></div><div><strong>$2,500</strong><span>USDC across five sprints</span></div>
           </div>
-          <div class="case-detail-grid"><p>Five consecutive weekly leaderboard sprints took Quantus from a standing start to a community completing real, screened actions around a technical protocol.</p><p>Quests reached beyond follows and likes: app installs, GitHub follows, explainer views, CoinGecko stars and knowledge checks made the campaign a product funnel.</p></div>
+          <div class="case-detail-grid"><p>Five weekly leaderboard sprints built an active community around a technical protocol.</p><p>Quests tracked <strong>app installs, GitHub follows, explainer views, CoinGecko stars</strong> and knowledge checks.</p></div>
           <a class="text-link mono" href="assets/quantus-case-study.pdf" target="_blank" rel="noopener">VIEW THE QUANTUS CASE STUDY <span>↗</span></a>
           <p class="source-note mono">Source: Zealy platform data prepared for Zealy Growth · Oct 13, 2026.</p>
         </article>
 
-        <article class="case case-solstice">
+        <article class="case case-solstice" id="ambassador">
           <div class="case-top mono"><span>CASE 02 / AMBASSADOR PROGRAMS</span><span>SOLSTICE · SOLANA</span></div>
-          <div class="case-title-row"><div><p class="case-client">SOLSTICE <span>↗</span></p><h3>Build a roster<br />that shows up.</h3></div><p class="case-summary">A white-label ambassador engine, run week by week and ready when the big moment lands.</p></div>
+          <div class="case-title-row"><div><p class="case-client">SOLSTICE <span>↗</span></p><h3>Build a roster<br />that shows up.</h3></div><p class="case-summary">An ambassador program built for <strong>launch moments</strong> and sustained activity.</p></div>
           <div class="solstice-results"><div class="solstice-total"><span class="metric-label mono">EXECUTIVE TEAM · LAST 12 MONTHS</span><strong>4.9<span>M</span></strong><span class="metric-caption">impressions</span></div><div class="solstice-stats"><div><strong>26.7K</strong><span>new follows</span></div><div><strong>35.2K</strong><span>likes</span></div><div><strong>7.9K</strong><span>replies</span></div><div><strong>2.9K</strong><span>reposts</span></div></div></div>
           <div class="glass-panel process-panel">
             <div class="process-step"><span class="step-no mono">01</span><div><strong>Open call</strong><p>Applications move through the community and relevant ambassador networks.</p></div><span class="step-mark">↘</span></div>
@@ -82,23 +82,106 @@
           <p class="case-footnote">Underground ran Solstice’s program across seasons, including room, campaign and creator operations and the Season 2 to Season 3 rebuild. Separate deployments also supported Luminaries for Solana Foundation.</p>
         </article>
 
-        <article class="case case-executive">
+        <article class="case case-executive" id="personal">
           <div class="case-top mono"><span>CASE 03 / EXECUTIVE VOICE</span><span>SOLSTICE LABS · LINKEDIN</span></div>
-          <div class="case-title-row"><div><p class="case-client">PERSONAL BRANDING <span>↗</span></p><h3>Make expertise<br />easy to find.</h3></div><p class="case-summary">A clear point of view, written in the executive’s own voice, carried into conversations where decisions happen.</p></div>
+          <div class="case-title-row"><div><p class="case-client">PERSONAL BRANDING <span>↗</span></p><h3>Make expertise<br />easy to find.</h3></div><p class="case-summary">Executive content in the client’s voice, built to grow <strong>visibility and qualified conversations</strong>.</p></div>
           <div class="executive-results">
-            <div class="result-hero"><span class="metric-label mono">A DEAL CLOSED VIA LINKEDIN</span><strong>$30<span>M</span></strong><span class="metric-caption">One closed deal</span></div>
+            <div class="result-hero"><span class="metric-label mono">A DEAL CLOSED VIA LINKEDIN</span><strong>$30<span>M</span></strong><span class="metric-caption">Closed deal attributed to LinkedIn</span></div>
             <div class="result-list"><div><strong>+873%</strong><span>comment impressions</span></div><div><strong>2×</strong><span>weekly appearances</span></div><div><strong>+86%</strong><span>profile viewers</span></div><div><strong>+25%</strong><span>follower growth</span></div></div>
           </div>
-          <div class="albert-results"><div class="albert-heading"><span class="mono">ANOTHER EXECUTIVE SIGNAL</span><strong>ALBERT <span>/ CEO, GENLAYER</span></strong><span class="mono">FIRST 4 WEEKS</span></div><div class="albert-grid"><div><strong>65.8K</strong><span>impressions · +496%</span></div><div><strong>7.8%</strong><span>engagement</span></div><div><strong>584</strong><span>profile visits · +1,002%</span></div><div><strong>213</strong><span>new follows</span></div><div><strong>449 → 459</strong><span>Sorsa score</span></div></div></div>
-          <div class="case-detail-grid"><p>We start with an interview and a voice profile. Every post and comment has to pass a human review, with a veto list that protects the client's boundaries.</p><p>On X, the team joins conversations already moving. On LinkedIn, comments become concise, specific points of view from the people closest to the work.</p></div>
+          <div class="case-detail-grid"><p>Interviews and a voice profile shape each draft. <strong>Human review</strong> and a clear veto list protect the executive’s boundaries.</p><p>On X, the team joins active conversations. On LinkedIn, comments carry concise, specific points of view.</p></div>
           <div class="case-quote compact-quote"><span class="quote-mark">“</span><blockquote>They've raised my profile visibility, driven more inbound messages, and produced content that feels genuinely human.</blockquote><cite>JOHN COLE <span>/ HEAD OF INSTITUTIONAL SALES, SOLSTICE LABS</span></cite></div>
           <p class="source-note mono">Case-study results and testimonial from Underground Agency’s Personal Branding page.</p>
         </article>
+
+        <article class="case case-genlayer">
+          <div class="case-top mono"><span>CASE 04 / EXECUTIVE VOICE</span><span>GENLAYER · X</span></div>
+          <div class="case-title-row"><div><p class="case-client">ALBERT / CEO, GENLAYER <span>↗</span></p><h3>Four weeks.<br />A stronger signal.</h3></div><p class="case-summary">A focused first month of personal branding for GenLayer’s CEO.</p></div>
+          <div class="albert-results"><div class="albert-heading"><span class="mono">FIRST 4 WEEKS</span><strong>GENLAYER <span>/ CEO PERSONAL BRANDING</span></strong></div><div class="albert-grid"><div><strong>65.8K</strong><span>impressions · +496%</span></div><div><strong>7.8%</strong><span>engagement rate</span></div><div><strong>584</strong><span>profile visits · +1,002%</span></div><div><strong>213</strong><span>new follows</span></div><div><strong>449 → 459</strong><span>Sorsa score</span></div></div></div>
+          <p class="source-note mono">Source: first-four-week metrics supplied by Underground Agency.</p>
+        </article>
+
+        <div class="post-gallery" id="posts" aria-labelledby="post-gallery-title">
+          <div class="post-gallery-heading"><div><p class="mono">PUBLISHED WORK / EXECUTIVE CONTENT</p><h3 id="post-gallery-title">The voice is<br /><em>the proof.</em></h3></div><p>Selected executive posts. Open a card to view the original.</p></div>
+          <div class="x-post-grid">
+            <article class="x-post"><div class="x-post-head"><span class="x-avatar">B</span><div><strong>ben</strong><span>@ben_solstice · Dec 27, 2025</span></div><span class="x-mark" aria-label="X">𝕏</span></div><p class="x-post-type mono">X ARTICLE · SOLSTICE</p><p class="x-post-body">A long-form article from Solstice’s executive voice.</p><a href="https://x.com/ben_solstice/status/2004856428255687041" target="_blank" rel="noopener noreferrer" aria-label="Open Ben's original post on X">View original post <span>↗</span></a></article>
+            <article class="x-post"><div class="x-post-head"><span class="x-avatar">Y</span><div><strong>Yuvi Lightman | Quantus</strong><span>@YuviLightman · Apr 7, 2026</span></div><span class="x-mark" aria-label="X">𝕏</span></div><p class="x-post-type mono">X ARTICLE · QUANTUS</p><p class="x-post-body">A long-form article from Quantus’s founder.</p><a href="https://x.com/YuviLightman/status/2041427367890169999" target="_blank" rel="noopener noreferrer" aria-label="Open Yuvi Lightman's original article on X">View original post <span>↗</span></a></article>
+            <article class="x-post"><div class="x-post-head"><span class="x-avatar">Y</span><div><strong>Yuvi Lightman | Quantus</strong><span>@YuviLightman · Aug 1, 2026</span></div><span class="x-mark" aria-label="X">𝕏</span></div><p class="x-post-type mono">X POST · QUANTUS</p><p class="x-post-body">“I won’t dunk on the ColdCard guys because I know how hard it is to build a product, and a million things can go wrong…”</p><a href="https://x.com/YuviLightman/status/2083405416927818157" target="_blank" rel="noopener noreferrer" aria-label="Open Yuvi Lightman's original ColdCard post on X">View original post <span>↗</span></a></article>
+            <article class="x-post"><div class="x-post-head"><span class="x-avatar">R</span><div><strong>Ryan Day</strong><span>@RyanDay · Jul 30, 2026</span></div><span class="x-mark" aria-label="X">𝕏</span></div><p class="x-post-type mono">X POST · SOLSTICE</p><p class="x-post-body">“You don't need a clever campaign to onboard people when you tap into something they already care about.”</p><a href="https://x.com/RyanDay/status/2082828560700502144" target="_blank" rel="noopener noreferrer" aria-label="Open Ryan Day's original post on X">View original post <span>↗</span></a></article>
+            <article class="x-post"><div class="x-post-head"><span class="x-avatar">T</span><div><strong>thinkingmachina</strong><span>@thinkingmachina · Jul 20, 2026</span></div><span class="x-mark" aria-label="X">𝕏</span></div><p class="x-post-type mono">X POST · SOLANA ECOSYSTEM</p><p class="x-post-body">“Agents can pay agents over open internet rails now. @SolanaFndn just joined the @x402 Foundation as a founding member…”</p><a href="https://x.com/thinkingmachina/status/2079132688057847902" target="_blank" rel="noopener noreferrer" aria-label="Open thinkingmachina's original post on X">View original post <span>↗</span></a></article>
+            <article class="x-post"><div class="x-post-head"><span class="x-avatar">C</span><div><strong>Christopher Abbott</strong><span>@solsticemonk · Jul 23, 2026</span></div><span class="x-mark" aria-label="X">𝕏</span></div><p class="x-post-type mono">X POST · SOLSTICE</p><p class="x-post-body">“Yield is becoming an API, not a destination. You used to open five apps, bridge twice, and babysit a vault…”</p><a href="https://x.com/solsticemonk/status/2080253042402656403" target="_blank" rel="noopener noreferrer" aria-label="Open Christopher Abbott's original post on X">View original post <span>↗</span></a></article>
+          </div>
+          <div class="linkedin-work"><p class="mono">ALSO ON LINKEDIN</p><a href="https://www.linkedin.com/pulse/solanas-next-15-billion-problem-ben-nadareski-j9mbe/" target="_blank" rel="noopener noreferrer"><span>IN</span><strong>Solana’s Next $15 Billion Problem</strong><small>Ben Nadareski · Article</small><b>↗</b></a><a href="https://www.linkedin.com/posts/johncole99_usx-joins-zebecs-500m-payroll-network-activity-7493935081342918657-9ZBQ" target="_blank" rel="noopener noreferrer"><span>IN</span><strong>USX joins Zebec’s payroll network</strong><small>John Cole · Post</small><b>↗</b></a></div>
+          <p class="source-note mono">Posts selected from Underground Agency’s Personal Branding page. Text previews are shortened; linked originals carry the full content.</p>
+        </div>
+      </section>
+
+      <section class="videos section-shell" id="videos" aria-labelledby="videos-title">
+        <div class="section-kicker mono"><span>03</span><span>VIDEO / SELECTED WORK</span></div>
+        <div class="section-heading"><h2 id="videos-title">Stories built<br /><em>to move.</em></h2><p>Campaign films, product explainers and creative work from the Solstice video library.</p></div>
+        <div class="video-grid">
+          <a class="video-item" href="https://x.com/solsticefi/status/2072622097797648643" target="_blank" rel="noopener noreferrer"><span class="video-index mono">01 / CAMPAIGN</span><strong>The Future Is Now, Old Man</strong><span class="video-description">A short cinematic film built around a futuristic hook.</span><b aria-hidden="true">↗</b></a>
+          <a class="video-item" href="https://x.com/solsticefi/status/2029904497926099424" target="_blank" rel="noopener noreferrer"><span class="video-index mono">02 / PRODUCT</span><strong>Solstice Ambassador Portal</strong><span class="video-description">Introducing the portal, its three tiers and impact-based SLX rewards.</span><b aria-hidden="true">↗</b></a>
+          <a class="video-item" href="https://x.com/solsticefi/status/2070892260493816314" target="_blank" rel="noopener noreferrer"><span class="video-index mono">03 / EXPLAINER</span><strong>AI Yield, Made Clear</strong><span class="video-description">A short visual explainer that makes AI yield easier to understand.</span><b aria-hidden="true">↗</b></a>
+          <a class="video-item" href="https://x.com/solsticefi/status/2046227166913085887" target="_blank" rel="noopener noreferrer"><span class="video-index mono">04 / PRODUCT</span><strong>Flares Season 2: How It Works</strong><span class="video-description">A quick guide to the season’s commitment and retention mechanics.</span><b aria-hidden="true">↗</b></a>
+          <a class="video-item" href="https://x.com/solsticefi/status/2043622420855308736" target="_blank" rel="noopener noreferrer"><span class="video-index mono">05 / CAMPAIGN</span><strong>Flares Season 2 Snapshot</strong><span class="video-description">A recap of 410 billion Flares earned and 10 million quests completed.</span><b aria-hidden="true">↗</b></a>
+          <a class="video-item" href="https://x.com/solsticefi/status/2065449194039742563" target="_blank" rel="noopener noreferrer"><span class="video-index mono">06 / EVENT</span><strong>The Berliner Bär at Solana Summit</strong><span class="video-description">A playful event teaser made with Superteam Germany.</span><b aria-hidden="true">↗</b></a>
+          <a class="video-item" href="https://x.com/solsticefi/status/2085650062416417267" target="_blank" rel="noopener noreferrer"><span class="video-index mono">07 / CREATIVE</span><strong>Don’t Forget to Stretch</strong><span class="video-description">A short cat-led creative video.</span><b aria-hidden="true">↗</b></a>
+        </div>
+        <div class="video-archive-links"><a class="text-link mono" href="https://drive.google.com/drive/folders/1ZtGhaOE1GXZQgXnc5N8-FjAVJbu56qXY" target="_blank" rel="noopener noreferrer">BROWSE THE FULL DRIVE ARCHIVE <span>↗</span></a><span class="mono">35 TITLED VIDEOS · GROUPED BY FORMAT IN NOTION</span></div>
+        <details class="drive-library">
+          <summary><span class="mono">FULL DRIVE LIBRARY</span><strong>Browse all 35 videos</strong><span class="library-toggle" aria-hidden="true">＋</span></summary>
+          <div class="drive-library-content">
+            <div class="drive-category"><h3>AI and campaign films <span>04</span></h3><div class="drive-video-grid">
+              <a href="https://drive.google.com/file/d/1o1BYC1t0A7qwsDZVyDPtW21E_g9CRRs9/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>AI Campaign Video - Episode 3</strong><span>Episode 3 from the AI video series.</span></a>
+              <a href="https://drive.google.com/file/d/19InW6vHcJZGgl-kQiIQcOCvCcfCSw_Oe/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Junior Strategy</strong><span>A cat-led video explaining the junior strategy in the Calm Cat framework.</span></a>
+              <a href="https://drive.google.com/file/d/1azbesSin2hmtTRvmLCc4lSBuLVRcQ1Cj/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Calm Cat Strategy - Senior Strategy</strong><span>A companion cat-led video explaining the senior strategy.</span></a>
+              <a href="https://drive.google.com/file/d/1iV1yfjzKIjh3OrbmhmVQohpIeRDDtU2W/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Calm Cat Strategy - The Investment Pitch</strong><span>A satirical cat-led pitch for a Bitcoin-stacking strategy and “Fish” note.</span></a>
+            </div></div>
+            <div class="drive-category"><h3>Short-form social videos <span>07</span></h3><div class="drive-video-grid">
+              <a href="https://drive.google.com/file/d/1xKOcNn3aX4w1rssQlyUw5VBqTsfQFG_N/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Tokenomics Before TGE: Why Change?</strong><span>Why tokenomics changes before a TGE can stir a reaction.</span></a>
+              <a href="https://drive.google.com/file/d/14dkBzKGCtpm5c02fPFUR82nkqyOLovgw/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>The Market Is Rediscovering TGEs</strong><span>A short-form observation on renewed excitement around token launches.</span></a>
+              <a href="https://drive.google.com/file/d/15qsDQdeTT9NJEtLWklpGJPBkx90M8c9D/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Yield Products Backed by U.S. Treasuries</strong><span>An explainer on yield products backed by U.S. Treasuries.</span></a>
+              <a href="https://drive.google.com/file/d/1I5cpaMiOX-2O6L0d65Vd4B_Erm1Shl5K/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Beyond DeFi Summer: What’s Next?</strong><span>A teaser for what could come after DeFi Summer.</span></a>
+              <a href="https://drive.google.com/file/d/1t1ubnULdDaMaM126GvHusQqFmxhKOOO5/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>A Startup Janitor Making $1M</strong><span>A short-form take on a janitor at a startup making a million dollars.</span></a>
+              <a href="https://drive.google.com/file/d/18JW1cwNEHnAtEm4qQ-iQRYjVwUCEhp_p/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Web3 Security Tools: Used by Good and Bad Actors</strong><span>How security tools can serve both attackers and defenders.</span></a>
+              <a href="https://drive.google.com/file/d/1_CX3KtCN0zDmTHbCjbThqvRCPzqMHVBh/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Programmable Money Meets Real-World Constraints</strong><span>A short explainer on the limits of programmable money.</span></a>
+            </div></div>
+            <div class="drive-category"><h3>Product explainers <span>21</span></h3><div class="drive-video-grid">
+              <a href="https://drive.google.com/file/d/1X-42zzR7QrZvqAq4rSDgVt452Co9cn9b/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Quantum Development Is Hard to Keep Under Wraps</strong><span>Can governments keep quantum development contained?</span></a>
+              <a href="https://drive.google.com/file/d/1FBlIgPjGJE5c850yTy-BeR2nDWdfOWcs/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>STRC: Preferred Equity Explained</strong><span>An introduction to STRC as preferred equity.</span></a>
+              <a href="https://drive.google.com/file/d/1GfBZEmYU2g3YwfueShDfaceva6_6vGMS/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Senior or Junior: What Happens When a Holder Exits?</strong><span>What an exit could mean for senior or junior exposure.</span></a>
+              <a href="https://drive.google.com/file/d/1EqYjpRBrTXLdZ4Okn5Y8PHp_eWpxKFeQ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Why Keep a Junior Buffer Instead of Chasing APY?</strong><span>The role of a junior buffer alongside yield.</span></a>
+              <a href="https://drive.google.com/file/d/1DqlJ0JqqUhlri_8HOTEJV0eMCIUKMw8p/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Where STRC Fits Across Risk Profiles</strong><span>STRC exposure across different risk profiles.</span></a>
+              <a href="https://drive.google.com/file/d/1XATHWqOPHR74cP3Kv6QYyR7WzCHgtcvR/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>How Senior and Junior STRC Exposure Can Be Used</strong><span>Options available across senior and junior exposure.</span></a>
+              <a href="https://drive.google.com/file/d/1rtHpWA3AePKRhBOA8H9AC6kPs4GYFm5T/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Building strcUSX: Key Design Considerations</strong><span>Key considerations behind building strcUSX.</span></a>
+              <a href="https://drive.google.com/file/d/1rChjXGd7yqwv7S-UTShA8I_CYef9rupH/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>How STRC’s Structure Improves Resilience</strong><span>Design choices intended to make STRC more resilient.</span></a>
+              <a href="https://drive.google.com/file/d/1cT8cxWh2kFrPSH4-aUfpIyAn4vqyseIW/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>STRC at $95 vs. $100: What Changes?</strong><span>What changes as STRC moves from $95 to $100.</span></a>
+              <a href="https://drive.google.com/file/d/1J35h7snox4G0biaqBEeigddvrv-AGEn7/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Does a Lower STRC Price Mean an Immediate Loss?</strong><span>How a price drop relates to realized and unrealized loss.</span></a>
+              <a href="https://drive.google.com/file/d/1ayZhpeEkxYdddWv85WQfQioceGOstIFY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>How the System Responds Under Stress</strong><span>How the system behaves under stress.</span></a>
+              <a href="https://drive.google.com/file/d/1l8c9A3CjKq5z-IwMCjaGPMeB3YA2EZEI/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Understanding the 200% Coverage Mechanism</strong><span>An explanation of the 200% coverage mechanism.</span></a>
+              <a href="https://drive.google.com/file/d/1TrasAvpurYzdane6ipm-4NkzdnePi2Kw/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Tranching as a Broader DeFi Risk Tool</strong><span>Tranching as a wider DeFi risk-management tool.</span></a>
+              <a href="https://drive.google.com/file/d/1f9ZKynohL2lUrVnvrLra69Sjf7jJF5W7/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Why Tranche STRC Instead of Putting It Onchain?</strong><span>Creating tranches around STRC compared with putting it onchain.</span></a>
+              <a href="https://drive.google.com/file/d/1YRHUTYbEdta-7TtUinuW0cQ985-lFhc0/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>strcUSX: Senior vs. Junior</strong><span>The differences between senior and junior strcUSX positions.</span></a>
+              <a href="https://drive.google.com/file/d/1rUO2BeVS8LJ_lryV2nNSDeg-9efaoinU/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>How Yield Is Shared in strcUSX</strong><span>How yield is allocated across strcUSX positions.</span></a>
+              <a href="https://drive.google.com/file/d/1RuGjAaDJWZ-o3A0V_ORJeuRVyRO3b5MG/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Why Build Around STRC?</strong><span>The rationale for building around STRC.</span></a>
+              <a href="https://drive.google.com/file/d/1UAUH4KknjiBbbmRCyivHyz3F0mvsNd24/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Different Investors Need Different Risk Profiles</strong><span>Why investors may choose different levels of risk.</span></a>
+              <a href="https://drive.google.com/file/d/18ZI2cGleu4VgulllD8x9fDUlIkrdfoNY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>Where strcUSX Fits in the Broader Strategy</strong><span>How strcUSX fits into the broader strategy.</span></a>
+              <a href="https://drive.google.com/file/d/1frV1oJIv2jkZz5M-M3rYjcePF_oWVB5N/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>What Has Changed with STRC?</strong><span>A short update on recent changes around STRC.</span></a>
+              <a href="https://drive.google.com/file/d/1jGd0YFKG6xgnjRpHRAjm8YPob1pblW-W/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>STRC Explained: An Introduction</strong><span>A concise introduction to STRC.</span></a>
+            </div></div>
+            <div class="drive-category"><h3>Launch videos <span>03</span></h3><div class="drive-video-grid">
+              <a href="https://drive.google.com/file/d/16prcSlJOnyYWNJWCpPpdWNmRDbKMIhcu/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>TGE Launch Film</strong><span>A launch-focused film for a token generation event.</span></a>
+              <a href="https://drive.google.com/file/d/1SYMTYJH3q8eQfM9SD-lyQr-lwBMjeeor/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>aiUSX Launch Film</strong><span>A high-energy promotional edit for aiUSX.</span></a>
+              <a href="https://drive.google.com/file/d/1Ia2I3pGBaMaPz1ghG4y99kY1BnxdXxq4/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>STRC Launch Film</strong><span>A launch film introducing STRC.</span></a>
+            </div></div>
+          </div>
+        </details>
       </section>
 
       <section class="services section-shell" id="services" aria-labelledby="services-title">
-        <div class="section-kicker mono"><span>03</span><span>CAPABILITIES</span></div>
-        <div class="section-heading"><h2 id="services-title">The right people<br /><em>for the hard parts.</em></h2><p>A compact view of the work behind the case studies.</p></div>
+        <div class="section-kicker mono"><span>04</span><span>CAPABILITIES</span></div>
+        <div class="section-heading"><h2 id="services-title">The right people<br /><em>for the hard parts.</em></h2></div>
         <div class="capability-grid">
           <article><span class="mono">01 / POSITION</span><h3>Strategy &amp; narrative</h3><p>GTM strategy, positioning and messaging that make one clear story travel across every channel.</p></article>
           <article><span class="mono">02 / SHOW UP</span><h3>People &amp; community</h3><p>Executive voice, social execution, ambassador programs and real human participation.</p></article>
@@ -108,13 +191,12 @@
       </section>
 
       <section class="method section-shell" id="method" aria-labelledby="method-title">
-        <div class="section-kicker mono"><span>04</span><span>THE OPERATING SYSTEM</span></div>
+        <div class="section-kicker mono"><span>05</span><span>THE OPERATING SYSTEM</span></div>
         <div class="method-layout"><h2 id="method-title">Less theatre.<br /><em>More signal.</em></h2><div class="method-points"><article><span class="mono">01 / FIND THE REAL EDGE</span><p>Get close to the product, the people and the audience before making a promise.</p></article><article><span class="mono">02 / BUILD THE MACHINE</span><p>Give good work a clear voice, a repeatable rhythm and a place to get reviewed.</p></article><article><span class="mono">03 / FOLLOW THE PROOF</span><p>Look at what people did, not just what a dashboard made look busy.</p></article></div></div>
       </section>
 
       <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
-        <div class="contact-glow" aria-hidden="true"></div>
-        <div class="section-kicker mono"><span>05</span><span>YOUR MOVE</span></div>
+        <div class="section-kicker mono"><span>06</span><span>YOUR MOVE</span></div>
         <p class="contact-pre mono">HAVE A HARD PROBLEM?</p>
         <h2 id="contact-title">Let's get<br /><em>underground.</em></h2>
         <p class="contact-copy">Tell us what you're building. We'll find the signal worth amplifying.</p>

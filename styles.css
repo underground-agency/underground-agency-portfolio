@@ -1231,3 +1231,34 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
 @media (prefers-reduced-motion: reduce) {
   .hero-stage, .hero-bottom, .contact-status i { animation: none !important; }
 }
+
+/* One quiet, near-black canvas shared by every portfolio section. */
+body {
+  position: relative;
+  isolation: isolate;
+  background: #020304;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 34% 42% at 67% 8%, rgba(48, 67, 105, .075), transparent 76%),
+    linear-gradient(122deg, transparent 0 59%, rgba(124, 151, 207, .025) 59.12%, transparent 59.34% 100%),
+    linear-gradient(90deg, transparent calc(66.3% - .5px), rgba(205, 220, 240, .065) 66.3%, transparent calc(66.3% + .5px)),
+    #020304;
+}
+.hero, .intro, .work, .videos, .services, .method, .contact, .footer {
+  background: transparent !important;
+}
+@media (max-width: 760px) {
+  body::before {
+    background:
+      radial-gradient(ellipse 52% 34% at 78% 6%, rgba(48, 67, 105, .06), transparent 76%),
+      linear-gradient(122deg, transparent 0 68%, rgba(124, 151, 207, .018) 68.12%, transparent 68.34% 100%),
+      linear-gradient(90deg, transparent calc(78% - .5px), rgba(205, 220, 240, .045) 78%, transparent calc(78% + .5px)),
+      #020304;
+  }
+}

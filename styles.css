@@ -1300,6 +1300,11 @@ body::before {
   font-size: 11px;
   line-height: 1.6;
 }
+.result-hero .metric-caption,
+.solstice-total .metric-caption {
+  color: #d0d4de;
+  font-size: 12px;
+}
 .albert-heading > span,
 .albert-heading strong span {
   color: #c2c9d9;

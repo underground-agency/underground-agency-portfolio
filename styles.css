@@ -1058,19 +1058,19 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
 
 /* Make the section menu labels unmistakably readable at real device scale. */
 @media (min-width: 761px) {
-  .desktop-nav { font-size: 18px; font-weight: 400; }
-  .desktop-nav::before { font-size: 12px; }
-  .desktop-nav a, .desktop-nav a:last-child { min-height: 60px; }
-  .nav-index { font-size: 14px; }
+  .desktop-nav { font-size: 14px; font-weight: 400; }
+  .desktop-nav::before { font-size: 10px; }
+  .desktop-nav a, .desktop-nav a:last-child { min-height: 52px; }
+  .nav-index { font-size: 11px; }
 }
 @media (min-width: 761px) and (max-width: 1000px) {
-  .desktop-nav { font-size: 18px; font-weight: 400; }
-  .desktop-nav a, .desktop-nav a:last-child { min-height: 58px; }
-  .nav-index { font-size: 13px; }
+  .desktop-nav { font-size: 14px; font-weight: 400; }
+  .desktop-nav a, .desktop-nav a:last-child { min-height: 50px; }
+  .nav-index { font-size: 11px; }
 }
 @media (max-width: 760px) {
-  .desktop-nav { font-size: 18px; font-weight: 400; }
-  .desktop-nav::before { font-size: 12px; }
-  .desktop-nav a, .desktop-nav a:last-child { min-height: 58px; }
-  .nav-index { font-size: 13px; }
+  .desktop-nav { font-size: 16px; font-weight: 400; }
+  .desktop-nav::before { font-size: 10px; }
+  .desktop-nav a, .desktop-nav a:last-child { min-height: 54px; }
+  .nav-index { font-size: 11px; }
 }

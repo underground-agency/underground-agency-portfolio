@@ -1055,3 +1055,22 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   .desktop-nav a:hover::after, .desktop-nav a[aria-current="location"]::after { transform: scaleX(1); }
   main { margin-left: 0; }
 }
+
+/* Make the section menu labels unmistakably readable at real device scale. */
+@media (min-width: 761px) {
+  .desktop-nav { font-size: 21px; font-weight: 600; }
+  .desktop-nav::before { font-size: 12px; }
+  .desktop-nav a, .desktop-nav a:last-child { min-height: 66px; }
+  .nav-index { font-size: 15px; }
+}
+@media (min-width: 761px) and (max-width: 1000px) {
+  .desktop-nav { font-size: 19px; }
+  .desktop-nav a, .desktop-nav a:last-child { min-height: 62px; }
+  .nav-index { font-size: 14px; }
+}
+@media (max-width: 760px) {
+  .desktop-nav { font-size: 19px; font-weight: 600; }
+  .desktop-nav::before { font-size: 12px; }
+  .desktop-nav a, .desktop-nav a:last-child { min-height: 64px; }
+  .nav-index { font-size: 13px; }
+}

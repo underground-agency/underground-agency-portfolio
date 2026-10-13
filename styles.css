@@ -1246,7 +1246,6 @@ body::before {
   pointer-events: none;
   background:
     radial-gradient(ellipse 34% 42% at 67% 8%, rgba(48, 67, 105, .075), transparent 76%),
-    linear-gradient(122deg, transparent 0 59%, rgba(124, 151, 207, .025) 59.12%, transparent 59.34% 100%),
     #020304;
 }
 .hero, .intro, .work, .videos, .services, .method, .contact, .footer {
@@ -1256,7 +1255,6 @@ body::before {
   body::before {
     background:
       radial-gradient(ellipse 52% 34% at 78% 6%, rgba(48, 67, 105, .06), transparent 76%),
-      linear-gradient(122deg, transparent 0 68%, rgba(124, 151, 207, .018) 68.12%, transparent 68.34% 100%),
       #020304;
   }
 }

@@ -1478,6 +1478,7 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
 
 /* Keep the Quantus illustration in its own grid row, above the result strip. */
 .case-quantus .case-visual { grid-column: 2; grid-row: 2; align-self: stretch; height: clamp(280px,28vw,360px); min-height: 0; margin: 12px 0 24px; }
+.case-quantus .quantus-core { width: auto; height: auto; border: 0; border-radius: 0; background: transparent; box-shadow: none; color: #96A8FF; font-size: clamp(54px,8vw,92px); }
 .case-quantus .case-stats { grid-row: 3; }
 .case-quantus .case-actions { grid-row: 4; }
 .case-quantus > .text-link { grid-row: 5; }

@@ -1579,3 +1579,27 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   .case-executive .case-summary,
   .case-genlayer .case-summary { font-size: 16px; }
 }
+
+/* Make the flagship client unmistakable before the metrics are read. */
+.case-solstice { border-top: 2px solid rgba(150,168,255,.72); }
+.case-solstice .case-title-row h3 { margin: 4px 0 0; font-size: clamp(58px,7.2vw,96px); line-height: .98; letter-spacing: -.075em; }
+.case-solstice .case-client { color: #96A8FF; font-size: 12px; font-weight: 600; letter-spacing: .12em; }
+.case-solstice .case-subtitle { margin: 14px 0 0; color: #aeb4c1; font: 12px/1.5 var(--mono); letter-spacing: .09em; }
+.case-solstice .case-summary { font-size: clamp(17px,1.6vw,20px); }
+@media (max-width: 760px) {
+  .case-solstice .case-title-row h3 { font-size: clamp(48px,13vw,68px); }
+  .case-solstice .case-subtitle { font-size: 11px; }
+}
+
+/* Repeat owner and time period directly above each independent metric group. */
+.results-owner { grid-column: 1 / -1; margin: 0; padding: 14px 18px; border-bottom: 1px solid rgba(226,232,244,.15); color: #96A8FF; font: 12px/1.5 var(--mono); letter-spacing: .07em; }
+.case-quantus .case-stats .results-owner { padding: 14px 20px; }
+.case-solstice .solstice-results .results-owner { padding: 14px 18px; }
+.case-executive .executive-results .results-owner { padding: 14px 22px; }
+.case-genlayer .albert-heading .mono { font-size: 13px; line-height: 1.6; }
+@media (max-width: 560px) {
+  .results-owner { padding: 12px; font-size: 10px; }
+  .case-quantus .case-stats .results-owner { padding: 12px; }
+  .case-solstice .solstice-results .results-owner,
+  .case-executive .executive-results .results-owner { padding: 12px; }
+}

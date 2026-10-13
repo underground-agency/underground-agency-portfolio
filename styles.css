@@ -1557,3 +1557,25 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
 .case-quantus .case-stats span { font-size: 12px; line-height: 1.5; }
 .case-actions > p { font-size: 11px; }
 .case-actions > div span { font-size: 12px; line-height: 1.6; }
+
+/* Balance left-side case framing with the result panels beside it. */
+.case-solstice .case-title-row h3,
+.case-executive .case-title-row h3,
+.case-genlayer .case-title-row h3 { font-size: clamp(36px,4vw,54px); line-height: 1.1; }
+.case-solstice .case-summary,
+.case-executive .case-summary,
+.case-genlayer .case-summary { max-width: 560px; font-size: clamp(17px,1.6vw,20px); line-height: 1.6; }
+.case-solstice .case-client,
+.case-executive .case-client,
+.case-genlayer .case-client { font-size: 13px; }
+.case-quantus .case-stats span { font-size: 13.5px; }
+.case-actions > p { font-size: 12px; }
+.case-actions > div span { font-size: 13px; }
+@media (max-width: 760px) {
+  .case-solstice .case-title-row h3,
+  .case-executive .case-title-row h3,
+  .case-genlayer .case-title-row h3 { font-size: clamp(30px,8vw,40px); }
+  .case-solstice .case-summary,
+  .case-executive .case-summary,
+  .case-genlayer .case-summary { font-size: 16px; }
+}

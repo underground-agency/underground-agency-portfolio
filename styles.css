@@ -1074,3 +1074,105 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   .desktop-nav a, .desktop-nav a:last-child { min-height: 54px; }
   .nav-index { font-size: 11px; }
 }
+
+/* Near-black lab hero with a contained activation loop and a clean text ticker. */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #020305;
+  background-image: linear-gradient(90deg, transparent calc(50% - .5px), rgba(205,220,240,.075) 50%, transparent calc(50% + .5px));
+}
+.hero::before {
+  background: linear-gradient(90deg, rgba(1,2,4,.88), rgba(2,3,6,.64) 53%, rgba(1,2,4,.82));
+}
+.hero-lab { background: #020305; }
+.hero-lab::before {
+  background:
+    radial-gradient(ellipse at 78% 72%, rgba(27,107,148,.14), transparent 33%),
+    radial-gradient(ellipse at 22% 18%, rgba(44,61,112,.11), transparent 35%),
+    linear-gradient(122deg, transparent 0 47%, rgba(90,186,218,.045) 47.1%, transparent 47.35% 100%),
+    linear-gradient(90deg, transparent calc(50% - .5px), rgba(205,220,240,.075) 50%, transparent calc(50% + .5px));
+  opacity: .78;
+  animation: hero-glow 14s ease-in-out infinite alternate;
+}
+.hero-lab::after {
+  background: linear-gradient(180deg, rgba(2,3,5,.08), rgba(2,3,5,.32)),
+    repeating-linear-gradient(0deg, transparent 0 95px, rgba(205,220,240,.018) 96px),
+    linear-gradient(90deg, rgba(2,3,5,.12), transparent 49%, rgba(2,3,5,.2));
+}
+.hero-stage, .hero-bottom { position: relative; z-index: 2; }
+.hero-core {
+  position: absolute;
+  z-index: 1;
+  right: clamp(32px, 7vw, 118px);
+  bottom: 88px;
+  width: min(34vw, 360px);
+  aspect-ratio: 2.35;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  opacity: .7;
+}
+.hero-core-orbit {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 100%;
+  height: 66%;
+  border: 1px solid rgba(98,201,229,.25);
+  border-radius: 50%;
+  transform: translate(-50%,-50%) scale(.72);
+  animation: core-orbit 5.8s cubic-bezier(.2,.65,.3,1) infinite;
+}
+.hero-core-orbit-b { animation-delay: 1.9s; }
+.hero-core-orbit-c { animation-delay: 3.8s; }
+.hero-core-node {
+  position: relative;
+  display: grid;
+  width: 27px;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgba(132,225,244,.74);
+  border-radius: 50%;
+  background: #050c12;
+  box-shadow: 0 0 22px rgba(70,194,225,.3), inset 0 0 14px rgba(70,194,225,.16);
+  animation: core-pulse 2.8s ease-in-out infinite;
+}
+.hero-core-node i { width: 5px; aspect-ratio: 1; border-radius: 50%; background: #8be6f6; box-shadow: 0 0 12px #55d9ef; }
+.hero-core-label { position: absolute; right: 1%; bottom: 1%; color: rgba(147,199,214,.68); font-size: 8px; letter-spacing: .14em; }
+.hero-loop {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(205,220,240,.12);
+  background: rgba(1,2,4,.62);
+  color: rgba(211,222,233,.68);
+  font-size: 9px;
+  letter-spacing: .16em;
+  white-space: nowrap;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.hero-loop-track { display: flex; width: max-content; min-width: max-content; animation: hero-marquee 34s linear infinite; }
+.hero-loop-track > span { display: flex; align-items: center; flex: 0 0 auto; gap: 24px; padding-right: 24px; }
+.hero-loop-track i { color: #69cfe8; font-style: normal; font-size: 12px; }
+@keyframes hero-marquee { to { transform: translateX(-50%); } }
+@keyframes core-orbit {
+  0% { opacity: 0; transform: translate(-50%,-50%) scale(.48); }
+  18% { opacity: .7; }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(1.12); }
+}
+@keyframes core-pulse { 50% { box-shadow: 0 0 34px rgba(70,194,225,.44), inset 0 0 17px rgba(70,194,225,.24); } }
+@media (max-width: 760px) {
+  .hero { padding-bottom: 0; }
+  .hero-core { right: 8px; bottom: 88px; width: 45vw; opacity: .42; }
+  .hero-loop { position: relative; grid-column: 1; height: 38px; margin: 20px -22px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-lab::before, .hero-core-orbit, .hero-core-node, .hero-loop-track { animation: none !important; }
+  .hero-core-orbit { opacity: .16; transform: translate(-50%,-50%) scale(1); }
+}

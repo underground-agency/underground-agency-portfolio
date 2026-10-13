@@ -1309,3 +1309,47 @@ body::before {
 .albert-heading strong span {
   color: #c2c9d9;
 }
+
+/* Match the brighter cyan accent in the latest reference and remove the short hero divider. */
+:root { --blue: #83dcff; --cyan: #83dcff; }
+.hero-bottom { border-left: 0 !important; }
+h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
+.metric-label, .case-client, .case-quote cite, .section-kicker span:first-child,
+.contact-pre, .post-gallery-heading .mono, .linkedin-work > .mono, .text-link,
+.x-post a, .video-index, .drive-library > summary > .mono,
+.drive-category h3 span, .capability-grid article > span,
+.method-points article > span, .contact h2 em, .service-ribbon i,
+.case-client span, .text-link span, .video-item > b, .library-toggle,
+.button-primary span, .number-card strong span, .result-hero strong span,
+.solstice-total > strong span, .hero-bottom .hero-link,
+.hero-bottom .hero-link span, .signal, .nav-index,
+.desktop-nav a:hover .nav-index, .desktop-nav a[aria-current="location"] .nav-index {
+  color: #83dcff;
+}
+.signal, .scroll-progress span, .desktop-nav a::after {
+  background-color: #83dcff;
+}
+.signal { box-shadow: 0 0 12px rgba(131, 220, 255, .5); }
+.desktop-nav a::after { box-shadow: 0 0 12px rgba(131, 220, 255, .3); }
+.hero-bottom .hero-link { border-bottom-color: rgba(131, 220, 255, .68); }
+.button-primary, .contact .button-primary { border-color: rgba(131, 220, 255, .68); }
+.button-primary:hover, .contact .button-primary:hover {
+  border-color: #c7f0ff;
+  background: rgba(131, 220, 255, .08);
+}
+.drive-video-grid > a:hover {
+  border-color: rgba(131, 220, 255, .46);
+  background: rgba(131, 220, 255, .055);
+}
+.desktop-nav a:hover, .desktop-nav a[aria-current="location"] {
+  background: linear-gradient(90deg, rgba(131, 220, 255, .09), rgba(131, 220, 255, .018) 72%, transparent);
+}
+.contact::before {
+  background: linear-gradient(180deg, transparent, rgba(131, 220, 255, .13) 24%, rgba(131, 220, 255, .06) 74%, transparent);
+}
+.contact-status i {
+  background: #83dcff;
+  box-shadow: 0 0 12px rgba(131, 220, 255, .65);
+}
+.contact .button-primary { background: rgba(131, 220, 255, .025); }
+@keyframes status-breathe { 50% { box-shadow: 0 0 18px rgba(131, 220, 255, .92); opacity: .66; } }

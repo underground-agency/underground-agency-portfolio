@@ -1138,7 +1138,7 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   animation: core-pulse 2.8s ease-in-out infinite;
 }
 .hero-core-node i { width: 5px; aspect-ratio: 1; border-radius: 50%; background: #8be6f6; box-shadow: 0 0 12px #55d9ef; }
-.hero-core-label { position: absolute; right: 1%; bottom: 1%; color: rgba(147,199,214,.68); font-size: 8px; letter-spacing: .14em; }
+.hero-core-label { position: absolute; right: 1%; bottom: 1%; color: rgba(147,199,214,.68); font-size: 8px; letter-spacing: .14em; white-space: nowrap; }
 .hero-loop {
   position: absolute;
   z-index: 3;
@@ -1157,8 +1157,8 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   white-space: nowrap;
   mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
-.hero-loop-track { display: flex; width: max-content; min-width: max-content; animation: hero-marquee 34s linear infinite; }
-.hero-loop-track > span { display: flex; align-items: center; flex: 0 0 auto; gap: 24px; padding-right: 24px; }
+.hero-loop-track { display: flex; flex: 0 0 auto; width: max-content; min-width: max-content; white-space: nowrap; animation: hero-marquee 34s linear infinite; will-change: transform; }
+.hero-loop-track > span { display: flex; align-items: center; flex: 0 0 auto; width: max-content; gap: 24px; padding-right: 24px; white-space: nowrap; }
 .hero-loop-track i { color: #69cfe8; font-style: normal; font-size: 12px; }
 @keyframes hero-marquee { to { transform: translateX(-50%); } }
 @keyframes core-orbit {

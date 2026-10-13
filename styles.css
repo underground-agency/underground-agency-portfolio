@@ -1492,3 +1492,68 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   .case-quantus > .text-link { grid-row: 6; }
   .case-quantus > .source-note { grid-row: 7; }
 }
+
+/* GenLayer: give the five verified results one full-width, balanced table. */
+.case-genlayer .case-title-row { grid-column: 1 / -1; grid-row: 2; flex-direction: row; align-items: end; justify-content: space-between; gap: 28px; padding: 20px 0 24px; }
+.case-genlayer .case-title-row > div { flex: 1 1 auto; }
+.case-genlayer .case-title-row h3 { font-size: clamp(34px,3.7vw,50px); }
+.case-genlayer .case-summary { max-width: none; margin: 0 0 3px; font-size: clamp(16px,1.45vw,19px); text-align: right; }
+.case-genlayer .albert-results { grid-column: 1 / -1; grid-row: 3; width: 100%; margin: 0 0 18px; padding: 24px 28px 28px; }
+.case-genlayer .albert-heading { padding-bottom: 18px; }
+.case-genlayer .albert-heading .mono { font-size: 13px; }
+.case-genlayer .albert-heading > strong { font-size: 15px; }
+.case-genlayer .albert-grid { grid-template-columns: repeat(5,minmax(0,1fr)); row-gap: 0; }
+.case-genlayer .albert-grid > div { min-width: 0; min-height: 128px; padding: 23px 20px 15px; border-right: 1px solid rgba(226,232,244,.15); border-bottom: 0; }
+.case-genlayer .albert-grid > div:nth-child(2n) { border-right: 1px solid rgba(226,232,244,.15); }
+.case-genlayer .albert-grid > div:last-child { grid-column: auto; border-right: 0; border-bottom: 0; }
+.case-genlayer .albert-grid strong { font-size: clamp(38px,4vw,56px); line-height: 1.1; }
+.case-genlayer .albert-grid span { display: block; margin-top: 12px; font-size: 14px; line-height: 1.5; }
+.case-genlayer > .source-note { grid-column: 1 / -1; grid-row: 4; margin-top: 4px; font-size: 10px; }
+@media (max-width: 1000px) {
+  .case-genlayer .albert-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .case-genlayer .albert-grid > div:nth-child(2n) { border-right: 1px solid rgba(226,232,244,.15); }
+  .case-genlayer .albert-grid > div:nth-child(3n) { border-right: 0; }
+  .case-genlayer .albert-grid > div:nth-child(-n+3) { border-bottom: 1px solid rgba(226,232,244,.12); }
+  .case-genlayer .albert-grid > div:last-child { grid-column: 1 / -1; border: 0; }
+}
+@media (max-width: 760px) {
+  .case-genlayer .case-title-row { grid-column: 1; grid-row: auto; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .case-genlayer .case-summary { text-align: left; font-size: 16px; }
+  .case-genlayer .albert-results { grid-column: 1; grid-row: auto; padding: 20px; }
+  .case-genlayer .albert-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .case-genlayer .albert-grid > div:nth-child(3n) { border-right: 1px solid rgba(226,232,244,.15); }
+  .case-genlayer .albert-grid > div:nth-child(2n) { border-right: 0; }
+  .case-genlayer .albert-grid > div:nth-child(-n+4) { border-bottom: 1px solid rgba(226,232,244,.12); }
+  .case-genlayer .albert-grid > div:last-child { grid-column: 1 / -1; border: 0; }
+  .case-genlayer > .source-note { grid-column: 1; grid-row: auto; }
+}
+@media (max-width: 460px) {
+  .case-genlayer .albert-grid { grid-template-columns: 1fr; }
+  .case-genlayer .albert-grid > div,
+  .case-genlayer .albert-grid > div:nth-child(2n),
+  .case-genlayer .albert-grid > div:nth-child(3n) { min-height: 0; padding: 14px 8px; border-right: 0; border-bottom: 1px solid rgba(226,232,244,.12); }
+  .case-genlayer .albert-grid > div:last-child { grid-column: 1; border-bottom: 0; }
+}
+
+/* Executive case: raise the supporting copy and result labels to match the metrics. */
+.case-executive .case-title-row h3 { font-size: clamp(30px,3vw,42px); line-height: 1.12; }
+.case-executive .case-summary { max-width: 460px; font-size: clamp(15px,1.35vw,18px); line-height: 1.65; }
+.case-executive .result-hero { padding: 24px 28px; }
+.case-executive .metric-label { font-size: 13px; }
+.case-executive .result-hero strong { font-size: clamp(58px,6vw,82px); }
+.case-executive .metric-caption { max-width: 330px; font-size: 15px; line-height: 1.6; }
+.case-executive .result-list > div { min-height: 86px; padding: 15px 22px; }
+.case-executive .result-list strong { font-size: clamp(34px,3.3vw,46px); }
+.case-executive .result-list span { font-size: 14px; line-height: 1.5; }
+@media (max-width: 760px) {
+  .case-executive .case-title-row h3 { font-size: clamp(28px,7vw,38px); }
+  .case-executive .case-summary { font-size: 15px; }
+  .case-executive .result-list > div { min-height: 78px; padding: 14px; }
+  .case-executive .result-list strong { font-size: clamp(28px,7vw,38px); }
+  .case-executive .result-list span { font-size: 13px; }
+}
+
+/* Quantus metric captions: make the supporting labels easier to scan. */
+.case-quantus .case-stats span { font-size: 12px; line-height: 1.5; }
+.case-actions > p { font-size: 11px; }
+.case-actions > div span { font-size: 12px; line-height: 1.6; }

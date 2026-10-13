@@ -1446,3 +1446,32 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
   .section-heading { align-items: flex-start; flex-direction: column; gap: 7px; }
   .case-title-row { padding: 19px 0; }
 }
+
+/* Quantus source audit: keep the five headline results and action counts readable. */
+.case-quantus .case-stats { grid-template-columns: repeat(5,minmax(0,1fr)); }
+.case-quantus .case-stats > div { min-width: 0; padding: 18px 14px; }
+.case-quantus .case-stats strong { font-size: clamp(22px,2.7vw,36px); }
+.case-quantus .case-stats span { font-size: 9px; }
+.case-actions { grid-column: 1 / -1; margin: 0 0 20px; padding: 18px 20px 20px; border: 1px solid rgba(226,232,244,.15); background: rgba(10,12,18,.56); }
+.case-actions > p { display: flex; justify-content: space-between; gap: 16px; margin: 0 0 15px; color: #96A8FF; font: 9px/1.5 var(--mono); letter-spacing: .08em; }
+.case-actions > p span { color: #aeb4c1; text-align: right; }
+.case-actions > div { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 12px; }
+.case-actions > div span { color: #aeb4c1; font: 10px/1.6 var(--mono); }
+.case-actions strong { display: block; margin-bottom: 5px; color: #f0f2f6; font: 500 clamp(18px,2vw,25px)/1.2 var(--sans); letter-spacing: -.04em; font-variant-numeric: tabular-nums; }
+@media (max-width: 900px) {
+  .case-quantus .case-stats { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .case-quantus .case-stats > div:nth-child(3n) { border-right: 0; }
+  .case-quantus .case-stats > div:nth-child(-n+3) { border-bottom: 1px solid rgba(226,232,244,.15); }
+  .case-actions > div { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+@media (max-width: 560px) {
+  .case-quantus .case-stats { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .case-quantus .case-stats > div:nth-child(3n) { border-right: 1px solid rgba(226,232,244,.15); }
+  .case-quantus .case-stats > div:nth-child(2n) { border-right: 0; }
+  .case-quantus .case-stats > div:nth-child(-n+4) { border-bottom: 1px solid rgba(226,232,244,.15); }
+  .case-quantus .case-stats > div:last-child { border-bottom: 0; }
+  .case-actions { padding: 15px 13px; }
+  .case-actions > p { flex-direction: column; gap: 5px; }
+  .case-actions > p span { text-align: left; }
+  .case-actions > div { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 13px 8px; }
+}

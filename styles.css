@@ -1597,6 +1597,15 @@ h2 em, .hero-title-dot, .hero-overline span, .hero-bottom-index,
 .case-solstice .solstice-results .results-owner { padding: 14px 18px; }
 .case-executive .executive-results .results-owner { padding: 14px 22px; }
 .case-genlayer .albert-heading .mono { font-size: 13px; line-height: 1.6; }
+/* Keep Quantus action captions clearly inside their own metric columns. */
+.case-actions > div { column-gap: 24px; row-gap: 18px; }
+.case-actions > div span { min-width: 0; padding-right: 8px; line-height: 1.75; overflow-wrap: break-word; }
+@media (max-width: 900px) {
+  .case-actions > div { column-gap: 20px; }
+}
+@media (max-width: 560px) {
+  .case-actions > div { column-gap: 16px; row-gap: 16px; }
+}
 @media (max-width: 560px) {
   .results-owner { padding: 12px; font-size: 10px; }
   .case-quantus .case-stats .results-owner { padding: 12px; }
